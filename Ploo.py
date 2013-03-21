@@ -15,7 +15,7 @@ pygame.init()
 
 swmixer.init(samplerate=44100, chunksize=1024, stereo=True)
 swmixer.start()
-snd1 = swmixer.StreamingSound("../assets/audio/beat2.mp3")
+snd1 = swmixer.StreamingSound("../assets/audio/3030.mp3")
 snd2 = swmixer.StreamingSound("../assets/audio/l1.mp3")
 snd3 = swmixer.StreamingSound("../assets/audio/l2.mp3")
 snd4 = swmixer.StreamingSound("../assets/audio/l3.mp3")
@@ -56,8 +56,10 @@ while True:
         chan6.set_volume(0.9)
     if event.type == 3 and event.key == 53:
         chan6.set_volume(0.0)
-
-
+
+
+
+
     if event.key == 27:
         exit()
         
